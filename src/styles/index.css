@@ -1,0 +1,23 @@
+:root {
+  --brightGray: hsl(0, 0%, 92%);
+  --onyx: hsl(0, 0%, 22%);
+  --ufoGreen: hsl(161, 100%, 28%);
+  --languidLavender: hsl(249, 23%, 84%);
+  --mediumVermilion: hsl(11, 65%, 52%);
+  --rhythm: hsl(249, 23%, 54%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100vh;
+}

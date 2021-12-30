@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5 {
+  font-family: "SpaceMono-Regular", monospace;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong {
+  font-family: "SpaceMono-Bold", monospace;
+}
+
+strong {
+  font-family: "Muli-Bold", Georgia, serif;
+}
+
+.App {
+  background-color: var(--brightGray);
+  color: var(--onyx);
+  font-family: "Muli", Georgia, serif;
+  margin:0;
+  overflow: auto;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+@media print {
+  .App {
+    overflow: visible;
+  }
+}

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "SpaceMono-Regular";
+  src: local("SpaceMono-Regular"),
+   url("../fonts/space-mono/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SpaceMono-Bold";
+  src: local("SpaceMono-Bold"),
+   url("../fonts/space-mono/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: local("Muli"),
+   url("../fonts/muli/Muli.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Muli-Bold";
+  src: local("Muli-Bold"),
+   url("../fonts/muli/Muli-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"),
+   url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"),
+   url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"),
+   url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}

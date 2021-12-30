@@ -1,0 +1,9 @@
+.Footer {
+  background-color: var(--ufoGreen);
+  padding: 1rem 1.5rem 1.75rem 1.5rem;
+  text-align: right;
+}
+
+.Footer a {
+  color: var(--onyx);
+}
