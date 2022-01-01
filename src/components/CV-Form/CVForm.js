@@ -4,14 +4,15 @@ import ObjectFactory from './objectFactory';
 import CVOverview from './CVOverview';
 
 export default function CVForm() {
-  const [state, setState] = useState();
-
-  console.log(ObjectFactory('contact'));
-  console.log(ObjectFactory('summary'));
-  console.log(ObjectFactory('experience'));
-  console.log(ObjectFactory('education'));
-  console.log(ObjectFactory('skill'));
-
+  
+  const [data, setData] = useState({
+    contact: ObjectFactory('contact'),
+    summary: [ObjectFactory('summary')],
+  });
+  const [submittedData, setSubmittedData] = useState(null);
+  const [preview, setPreview] = useState(false);
+  console.log(data)
+  
   return (
     <>
 

@@ -11,11 +11,11 @@ const createContact = () => ({
 
 const createSummary = () => ({
   id: uniqid(),
-  summary: '',
+  paragraph: '',
 });
 
 const createAccomplishment = () => ({
-  id:uniqid(),
+  id: uniqid(),
   sentence: '',
 });
 
@@ -44,11 +44,11 @@ const createEducation = () => ({
 });
 
 const createSkill = () => ({
-  skill: {
+  name: {
     id: uniqid(),
     text: '',
   },
-  skillList: [],
+  list: [],
 });
 
 export default function ObjectFactory(string) {
