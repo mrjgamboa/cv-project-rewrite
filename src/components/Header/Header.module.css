@@ -7,9 +7,3 @@
 .Header > h1 {
   margin: 0;
 }
-
-@media print {
-  .Header {
-    display: none;
-  }
-}

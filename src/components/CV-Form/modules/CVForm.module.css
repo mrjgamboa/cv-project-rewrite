@@ -1,3 +1,221 @@
 .CVForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  width: 100%;
+}
 
+.CVForm section,
+.CVForm button.submit {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  margin: .5rem 0rem;
+  max-width: calc(500px + 10vw);
+  padding: 1rem;
+  width: 100%;
+}
+
+.CVForm h2 {
+  font-size: 1.17em;
+}
+
+.CVForm hr {
+  color: var(--languidLavender);
+  margin: .5rem 0;
+}
+
+.CVForm .hrv2 {
+  margin: 1rem .5rem 1rem .25rem;
+  border: 0;
+  border-bottom: 2px dashed var(--brightGray);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.CVForm div {
+  margin: 0 0 0 .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.CVForm .list {
+  padding: 0 .5rem 0 1rem;
+  margin-right: .5rem;
+}
+
+.CVForm label {
+  margin: .5rem 0;
+}
+
+.CVForm input,
+.CVForm textarea {
+  background-color: rgba(208, 205, 224, .5);
+  border: 0;
+  border-radius: 3px;
+  caret-color: var(--onyx);
+  color: var(--onyx);
+  font-size: 1rem;
+  margin: 0 .5rem;
+  outline: none;
+  padding: .25rem;
+}
+
+.CVForm input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance:none;
+  background-color: var(--languidLavender);
+  border: 1px solid var(--rhythm);
+  box-shadow: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 2em;
+  width: .7rem;
+  height: .7rem;
+  position: relative;
+}
+
+.CVForm input[type=checkbox]:checked {
+  background-color: var(--brightGray);
+  border-color: var(--languidLavender);
+}
+
+.CVForm input[type=checkbox]:checked::after {
+  content: " \2714";
+  color: var(--ufoGreen);
+  font-size: 1rem;
+  position: absolute;
+  inset: -.3rem 0 0 0;
+  -webkit-text-stroke-color: var(--onyx);
+  -webkit-text-stroke-width: 1px;
+}
+
+.CVForm textarea {
+  margin: .5rem .5rem 0 .5rem;
+  min-height: 60px;
+  line-height: 1.4rem;
+  resize: vertical;
+}
+
+.CVForm small {
+  margin: .5rem 0 .5rem .5rem;
+}
+
+.CVForm button {
+  border: 1px solid var(--ufoGreen);
+  border-radius: 3px;
+  cursor: pointer;
+  margin: .25rem .5rem .25rem auto;
+  float: right;
+  padding: .25rem;
+}
+
+.CVForm .delete {
+  border-color: var(--mediumVermilion);
+  margin: .75rem .5rem .25rem auto;
+}
+
+.CVForm .addToList {
+  border-color: var(--languidLavender);
+  margin: .75rem .5rem .25rem auto;
+}
+
+.CVForm .submit {
+  color: var(--onyx);
+  font-family: "SpaceMono-Regular", monospace;
+  font-size: 1.17em;
+  display: block;
+  margin-left: auto;
+  float: right;
+  width: auto;
+}
+
+.CVForm span {
+  color: var(--rhythm);
+  font-style: italic;
+}
+
+.CVForm summary {
+  border-radius: 3px;
+  color: var(--onyx);
+  cursor: pointer;
+  list-style: none;
+  margin: 1rem .5rem .5rem .5rem;
+}
+
+.CVForm summary::-webkit-details-marker {
+  display: none;
+}
+
+.CVForm details summary::before { 
+  content:"\25B7 \0020"; 
+  color: var(--rhythm); 
+}
+
+.CVForm details[open] summary::before { 
+  content:"\25BD \0020"; 
+  color: var(--rhythm); 
+}
+
+.CVForm ul {
+  list-style: none;
+}
+
+.CVForm ul li {
+  line-height: 1.4rem;
+  word-wrap: break-word;
+}
+
+.CVForm ul li::before {
+  content: "\2022";
+  color: var(--rhythm); 
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -.9rem;
+}
+
+.CVForm input:not([type=checkbox]):focus,
+.CVForm textarea:focus {
+  background-color: rgba(208, 205, 224, 1);
+  outline: 2px solid var(--ufoGreen);
+}
+
+.CVForm summary:focus-visible,
+.CVForm input[type=checkbox]:focus-visible,
+.CVForm button:focus-visible {
+  outline: 2px solid var(--ufoGreen);
+}
+
+.CVForm .delete:focus-visible {
+  outline: 2px solid var(--mediumVermilion);
+}
+
+.CVForm button:not(:disabled):hover {
+  background-color: var(--ufoGreen);
+  border-color: var(--ufoGreen);
+  color: var(--brightGray);
+}
+
+.CVForm button:disabled {
+  cursor: not-allowed;
+}
+
+.CVForm .delete:hover {
+  background-color: var(--mediumVermilion);
+  border-color: var(--mediumVermilion);
+}
+
+.CVForm summary:hover {
+  color: var(--rhythm);
+}
+
+.CVForm input.invalid {
+  outline: 2px dashed var(--mediumVermilion);
+}
+
+.CVForm input.invalid:focus {
+  outline: 2px solid var(--mediumVermilion);
 }
