@@ -45,13 +45,18 @@ const createEducation = () => ({
 
 const createSkill = () => ({
   skillName: '',
-  // when adding to list
-  // name: { 
-  //   id: uniqid(),
-  //   skillName: '',
-  // }
   list: [],
 });
+
+const createDefaultData = () => ({
+  contact: ObjectFactory('contact'),
+  skill: ObjectFactory('skill'),
+  summary: [ObjectFactory('summary')],
+  experience: [ObjectFactory('experience')],
+  education: [ObjectFactory('education')],
+});
+
+const removeExtraWhiteSpaces = (string) => string.replace(/\s+/g,' ').trim();
 
 const createDummy = ()  => {
   const dummy = {
@@ -62,11 +67,11 @@ const createDummy = ()  => {
   }
   dummy.contact = {
     firstName: 'John',
-    lastName: 'Doe',
+    lastName: 'Doe Jr.',
     email: 'johndoe@email.com',
     phoneNumber: '0909-123-1234',
     customLabel: 'LinkedIn',
-    customValue: 'linkedin.com/in/johnDoe',
+    customValue: 'https://www.linkedin.com/in/johndoe',
   };
   dummy.skill.list = [
     { 
@@ -76,10 +81,11 @@ const createDummy = ()  => {
     { id: uniqid(), skillName: 'Coordinating Conference Calls' },
     { id: uniqid(), skillName: 'Travel Arrangements' },
   ];
-  dummy.summary[0].paragraph = `Seeking position to help improve logistics 
+  const dummyPara = `Seeking position to help improve logistics 
     and internal communication. Saved Company, Inc. an average 15 hour per
     for four executives. Cut travel costs by 28%. Saved $112.000/yr by
     eliminating key clients misunderstandings with a new call system.`;
+  dummy.summary[0].paragraph = removeExtraWhiteSpaces(dummyPara);
   dummy.experience[0].jobTitle = 'Personal Executive Assistant';
   dummy.experience[0].company = 'Company, Inc.';
   dummy.experience[0].accomplishments = [
@@ -134,6 +140,8 @@ export default function ObjectFactory(string) {
     return createEducation();
   } else if (string === 'skill') {
     return createSkill();
+  } else if (string === 'data') {
+    return createDefaultData();
   } else if (string === 'dummy') {
     return createDummy();
   }

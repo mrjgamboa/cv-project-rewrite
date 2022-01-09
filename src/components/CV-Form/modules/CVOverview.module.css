@@ -1,3 +1,148 @@
 .CVOverview {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  padding: 1rem 1.5rem;
+}
+
+.CVOverview * {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.CVOverview h1,
+.CVOverview h2,
+.CVOverview h3 {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.CVOverview section > div.summaryInnerContainerDiv {
+  margin: 1.17rem 0;
+}
+
+.CVOverview section > div:not(.summaryInnerContainerDiv) {
+  margin: .5rem 0;
+} 
+
+.CVOverview h2 {
+  font-size: 18px;
+}
+
+.CVOverview strong {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.CVOverview button {
+  border: 1px solid var(--ufoGreen);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  color: var(--onyx);
+  cursor: pointer;
+  font-family: "SpaceMono-Regular", monospace;
+  font-size: 1.17em;
+  margin: .5rem;
+  max-width: 300px;
+  padding: .5rem;
+}
+
+.CVOverview .buttonDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.CVOverview .container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  max-width: 819px;
+  padding: 48px;
+  width: 100%;
+  overflow: auto;
+}
+
+.CVOverview .contactDynamicDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.CVOverview .contactDynamicDiv > p {
+  min-width: 265px;
+  padding: .2rem 0;
+}
+
+.CVOverview .dateDiv {
+  margin-top: 2px;
+  width: 135px;
+}
+
+.CVOverview .sectionInnerContainerDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.CVOverview .sectionInnerContainerDiv strong {
+  font-size: 16px;
+}
+
+.CVOverview .sectionInnerContainerDiv ul {
+  margin-left: .8rem;
+}
+
+.CVOverview .expInnerContainerChildDiv {
+  max-width: 580px;
+}
+
+.CVOverview .skillsUl {
+  list-style: none;
+  margin-left: 135px;
+}
+
+.CVOverview .skillsUl li:not(:last-child ) {
+  margin-bottom: .5rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .CVOverview .skillsUl {
+    margin-left: 0;
+  }
+}
+
+.CVOverview button:hover {
+  background-color: var(--ufoGreen);
+  border-color: var(--ufoGreen);
+  color: var(--brightGray);
+}
+
+@media print {
+  @page {
+    size: auto;
+    /* removes page title, link, number, 
+    and current date & time printing */
+    margin: 0 48px;
+  }
+  body  {
+    padding: 48px 0;
+  }
+  .CVOverview {
+    color: black;
+    padding: 0;
+  }
+  .CVOverview .container {
+    padding: 0;
+    box-shadow: none;
+    overflow: visible;
+  }
+  header,
+  footer,
+  .CVOverview .buttonDiv {
+    display: none;
+  }
 }

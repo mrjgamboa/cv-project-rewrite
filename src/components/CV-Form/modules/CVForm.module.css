@@ -8,7 +8,8 @@
 }
 
 .CVForm section,
-.CVForm button.submit {
+.CVForm button.submit,
+.CVForm button.reset {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   margin: .5rem 0rem;
@@ -122,7 +123,8 @@
   margin: .75rem .5rem .25rem auto;
 }
 
-.CVForm .submit {
+.CVForm .submit,
+.CVForm .reset {
   color: var(--onyx);
   font-family: "SpaceMono-Regular", monospace;
   font-size: 1.17em;
@@ -132,9 +134,19 @@
   width: auto;
 }
 
+.CVForm .reset {
+  border-color: var(--mediumVermilion);
+}
+
 .CVForm span {
   color: var(--rhythm);
   font-style: italic;
+}
+
+.CVForm .spanDelete {
+  color: var(--mediumVermilion);
+  cursor: pointer;
+  padding: 0 5px;
 }
 
 .CVForm summary {
@@ -189,11 +201,12 @@
   outline: 2px solid var(--ufoGreen);
 }
 
-.CVForm .delete:focus-visible {
+.CVForm .delete:focus-visible,
+.CVForm .reset:focus-visible {
   outline: 2px solid var(--mediumVermilion);
 }
 
-.CVForm button:not(:disabled):hover {
+.CVForm button:not(:disabled):not(.delete):not(.reset):hover {
   background-color: var(--ufoGreen);
   border-color: var(--ufoGreen);
   color: var(--brightGray);
@@ -203,12 +216,20 @@
   cursor: not-allowed;
 }
 
-.CVForm .delete:hover {
+.CVForm .delete:hover,
+.CVForm .reset:hover {
   background-color: var(--mediumVermilion);
   border-color: var(--mediumVermilion);
+  color: var(--brightGray);
 }
 
-.CVForm summary:hover {
+.CVForm .spanDelete:hover,
+.CVForm .spanDelete:focus {
+  font-weight: bold;
+}
+
+.CVForm summary:hover,
+.CVForm li:hover {
   color: var(--rhythm);
 }
 
@@ -218,4 +239,10 @@
 
 .CVForm input.invalid:focus {
   outline: 2px solid var(--mediumVermilion);
+}
+
+@media only screen and (max-width: 375px) {
+  .CVForm {
+    padding: 1rem .75rem;
+  }
 }
