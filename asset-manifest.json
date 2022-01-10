@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cv-project-rewrite/static/css/main.f2a034c9.css",
+    "main.js": "/cv-project-rewrite/static/js/main.e9131c52.js",
+    "static/media/Roboto-Medium.ttf": "/cv-project-rewrite/static/media/Roboto-Medium.0fcd45fbfc419c42c8b9.ttf",
+    "static/media/Roboto-Regular.ttf": "/cv-project-rewrite/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
+    "static/media/Roboto-Bold.ttf": "/cv-project-rewrite/static/media/Roboto-Bold.17451a4c1cd55e33ac57.ttf",
+    "static/media/SpaceMono-Regular.ttf": "/cv-project-rewrite/static/media/SpaceMono-Regular.8dc9dfb5a618f0d496e9.ttf",
+    "static/media/SpaceMono-Bold.ttf": "/cv-project-rewrite/static/media/SpaceMono-Bold.1baea2ede1f5455aafd6.ttf",
+    "static/media/Muli-Bold.ttf": "/cv-project-rewrite/static/media/Muli-Bold.24ed221362b3a224f9a7.ttf",
+    "static/media/Muli.ttf": "/cv-project-rewrite/static/media/Muli.4829cf81e2b513fc1b64.ttf",
+    "index.html": "/cv-project-rewrite/index.html",
+    "main.f2a034c9.css.map": "/cv-project-rewrite/static/css/main.f2a034c9.css.map",
+    "main.e9131c52.js.map": "/cv-project-rewrite/static/js/main.e9131c52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2a034c9.css",
+    "static/js/main.e9131c52.js"
+  ]
+}
