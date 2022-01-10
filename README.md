@@ -1,3 +1,11 @@
+# CV M4ker
+
+A React app which allows users to create their own resume using a ready template and download it in a PDF format.
+
+# Live Demo
+
+[Live Demo](https://michalosman.github.io/cv-application/) :point_left:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
