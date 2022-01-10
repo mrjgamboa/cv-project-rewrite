@@ -1,6 +1,6 @@
 # CV M4ker
 
-A React app which allows users to create their own resume using a ready template and download it in a PDF format.
+A React app which allows users to create their own resume using a ready template and download it in a PDF format. This project uses functional components and useState hook.
 
 # Live Demo
 
