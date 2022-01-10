@@ -74,7 +74,7 @@ export default function CVOverview(props) {
           <section className={styles.summary}>
             <div className={styles.summaryInnerContainerDiv}>
               <p>
-                {summary[0].paragraph}
+                {removeExtraWhiteSpaces(summary[0].paragraph)}
               </p>
             </div>
           </section>
