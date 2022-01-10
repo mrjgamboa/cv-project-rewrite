@@ -4,7 +4,7 @@ A React app which allows users to create their own resume using a ready template
 
 # Live Demo
 
-[https://mrjgamboa.github.io/cv-project-rewrite/](https://mrjgamboa.github.io/cv-project-rewrite/) :point_left:
+[https://mrjgamboa.github.io/cv-project-rewrite/](https://mrjgamboa.github.io/cv-project-rewrite/)
 
 # Getting Started with Create React App
 
